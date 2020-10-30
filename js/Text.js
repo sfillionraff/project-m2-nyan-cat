@@ -10,13 +10,15 @@ class Text {
     div.style.position = 'absolute';
     div.style.left = xPos;
     div.style.top = yPos;
-    div.style.color = 'white';
-    div.style.font = 'bold 30px Impact';
+    div.style.color = '#3333ff';
+    div.style.fontFamily = 'Comic Neue';
+    div.style.fontSize = '36';
+    div.style.padding = '5';
     div.style.zIndex = 2000;
 
-    root.appendChild(div);
-
     this.domElement = div;
+
+    root.appendChild(this.domElement);
   }
 
   // This method is used to update the text displayed in the DOM element
